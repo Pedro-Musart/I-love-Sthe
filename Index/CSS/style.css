@@ -1,0 +1,103 @@
+
+/* Fundo */
+.body {
+    background-color: #FFEEB7;
+}
+
+/* Barra de navegação */
+.bg-beje {
+    background-color: #FFEEB7;
+}
+
+
+.ilovesthe {
+    width: 400px;
+    height: 100px;
+    margin-left: 0.5rem;
+}
+
+.font-navbar{
+    font-family: 'Roboto', sans-serif ;
+    font-weight: bold;
+    font-size: larger;
+    
+}
+.text-rosa {
+  color: #E84546 !important;
+}
+
+.rosa {
+    color: #E84546;
+}
+
+.navbar-toggler-icon-rosa {
+  display: inline-block;
+  width: 1.5em;
+  height: 1.5em;
+  vertical-align: middle;
+  content: "";
+  background: no-repeat center center;
+  background-size: 100% 100%;
+ 
+}
+
+/* main conteudo principal */
+
+.explicacao {
+    box-sizing: border-box;
+    display: flex;
+    background-color: #e84546;
+    width: auto;
+    height: 750px;
+    justify-content: space-around;
+}
+
+.texto {
+    margin-top: 10rem;
+    margin-left: 3rem;
+}
+
+.explicacao-titulo{
+    font-size: 100px;
+    color: #FFEEB7;
+}
+
+.explicacao-paragrafo{
+    font-size: 30px;
+    color: #FFEEB7;
+}
+
+.casal-img img {
+    width: 35vw;
+    
+}
+
+.seta-para-baixo {
+    width: 100px;
+    height: 100px;
+    margin-top: 90px ;
+}
+
+/* medias */
+
+@media (max-width: 1200px){
+.casal-img img {
+    margin-top: 4rem;
+}
+
+}
+
+@media (max-width: 1000px){
+.casal-img img {
+    margin-top: 0px;
+}
+    
+}
+@media (max-width: 720px){
+
+    
+}
+@media (max-width: 576px){
+
+    
+}
