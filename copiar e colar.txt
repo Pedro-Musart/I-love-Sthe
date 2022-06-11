@@ -6,7 +6,7 @@
     left:0;
     right:0;
     bottom:0;
-    background-color: #F24444; /* cor do background que vai ocupar o body */
+    background-color: #FFEEB7; /* cor do background que vai ocupar o body */
     z-index:999; /* z-index para jogar para frente e sobrepor tudo */
 }
 #preloader .inner {
