@@ -1,8 +1,15 @@
+@font-face {
+    font-family: 'bitmap';
+    src: url(/fontes/Savior1.ttf) format('opentype');
+}
 
 /* Fundo */
 .body {
     background-color: #FFEEB7;
+  
 }
+
+
 
 /* Barra de navegação */
 .bg-beje {
@@ -12,18 +19,18 @@
 
 .ilovesthe {
     width: 400px;
-    height: 100px;
     margin-left: 0.5rem;
 }
 
-.font-navbar{
-    font-family: 'Roboto', sans-serif ;
-    font-weight: bold;
+.font-navbar {
+    font-family: 'Roboto', sans-serif;
+
     font-size: larger;
-    
+
 }
+
 .text-rosa {
-  color: #E84546 !important;
+    color: #E84546 !important;
 }
 
 .rosa {
@@ -31,25 +38,25 @@
 }
 
 .navbar-toggler-icon-rosa {
-  display: inline-block;
-  width: 1.5em;
-  height: 1.5em;
-  vertical-align: middle;
-  content: "";
-  background: no-repeat center center;
-  background-size: 100% 100%;
- 
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    content: "";
+    background: no-repeat center center;
+    background-size: 100%;
+
 }
 
 /* main conteudo principal */
 
 .explicacao {
-    box-sizing: border-box;
     display: flex;
+    justify-content: space-between;
     background-color: #e84546;
     width: auto;
-    height: 750px;
-    justify-content: space-around;
+    
+
 }
 
 .texto {
@@ -57,114 +64,196 @@
     margin-left: 3rem;
 }
 
-.explicacao-titulo{
+.explicacao-titulo {
+    
+    padding: 10px;
     font-size: 100px;
     color: #FFEEB7;
 }
 
-.explicacao-paragrafo{
+.explicacao-paragrafo {
     font-size: 30px;
     color: #FFEEB7;
 }
 
-.casal-img img {
-    width: 35vw;
-    
+
+
+.casal img {
+    width: 40vw;
+    margin: 50px;
 }
 
-.seta-para-baixo {
-    width: 100px;
-    height: 100px;
-    margin-top: 90px ;
+/* animação CSS */
+
+.wave-container {
+    width: 100%;
+
+
+}
+
+.wave {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+}
+
+.wave-1 {
+    animation: animateWave-1 10s 0s ease-in-out infinite alternate
+}
+
+@keyframes animateWave-1 {
+    from {
+        transform: scaleX(5) translateX(-800px) ;
+    }
+
+    to {
+        transform: scaleX(5) translateX(0px) ;
+    }
+}
+
+.wave-2 {
+
+    animation: animateWave-2 15s 0s ease-in-out infinite alternate;
+}
+
+@keyframes animateWave-2 {
+    from {
+        transform: scaleX(5) translateX(-900px);
+    }
+
+    to {
+        transform: scaleX(5) translateX(0px);
+    }
+}
+
+.wave-3 {
+    transform: translateY(-2px);
+    animation: animateWave-3 20s 0s ease-in-out infinite alternate;
+}
+
+@keyframes animateWave-3 {
+    from {
+        transform: scaleX(5) scaleY(1.2) translateX(-1000px) translateY(-10px);
+    }
+
+    to {
+        transform: scaleX(5) scaley(1.2) translateX(0px) translateY(-10px);
+    }
 }
 
 /* medias */
 
-@media (max-width: 1200px){
-.casal-img img {
-    margin-top: 4rem;
+@media (max-width: 1000px) {
+
+.ilovesthe {
+    width: 50vw;
 }
+
+.explicacao {
+      flex-direction: column;
+        
+        
+    }
+
+.casal {
+        display: flex;
+        justify-content: center;
+    }
+
+.casal img {
+        width: 60vw;
+    }
 
 }
 
-@media (max-width: 1000px){
-.casal-img img {
-    margin-top: 0px;
-}
-    
-}
-@media (max-width: 720px){
+@media (max-width: 1000px) {
+    .casal-img img {
+        margin-top: 0px;
+    }
 
-    
-}
-@media (max-width: 576px){
 
-    
 }
+
+@media (max-width: 720px) {}
+
+@media (max-width: 576px) {}
 
 /* ini: Preloader */
- 
+
 .coracao-preloader {
     width: 5vw;
 }
 
 #preloader {
-    position:fixed;
-    top:0;
-    left:0;
-    right:0;
-    bottom:0;
-    background-color: #FFEEB7; /* cor do background que vai ocupar o body */
-    z-index:999; /* z-index para jogar para frente e sobrepor tudo */
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFEEB7;
+    /* cor do background que vai ocupar o body */
+    z-index: 999;
+    /* z-index para jogar para frente e sobrepor tudo */
 }
+
 #preloader .inner {
     position: absolute;
-    top: 50%; /* centralizar a parte interna do preload (onde fica a animação)*/
+    top: 50%;
+    /* centralizar a parte interna do preload (onde fica a animação)*/
     left: 50%;
-    transform: translate(-50%, -50%);  
+    transform: translate(-50%, -50%);
 }
-.bolas > div {
-  display: inline-block;
-  background-color: #fff;
-  width: 25px;
-  height: 25px;
-  border-radius: 100%;
-  margin: 3px;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both;
-  animation-name: animarBola;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-   
+
+.bolas>div {
+    display: inline-block;
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    border-radius: 100%;
+    margin: 3px;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    animation-name: animarBola;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+
 }
-.bolas > div:nth-child(1) {
-    animation-duration:0.75s ;
+
+.bolas>div:nth-child(1) {
+    animation-duration: 0.75s;
     animation-delay: 0;
 }
-.bolas > div:nth-child(2) {
-    animation-duration: 0.75s ;
+
+.bolas>div:nth-child(2) {
+    animation-duration: 0.75s;
     animation-delay: 0.12s;
 }
-.bolas > div:nth-child(3) {
-    animation-duration: 0.75s  ;
+
+.bolas>div:nth-child(3) {
+    animation-duration: 0.75s;
     animation-delay: 0.24s;
 }
- 
+
 @keyframes animarBola {
-  0% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1;
-  }
-  16% {
-    -webkit-transform: scale(0.1);
-    transform: scale(0.1);
-    opacity: 0.7;
-  }
-  33% {
-    -webkit-transform: scale(1);
-    transform: scale(1);
-    opacity: 1; 
-  } 
+    0% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    16% {
+        -webkit-transform: scale(0.1);
+        transform: scale(0.1);
+        opacity: 0.7;
+    }
+
+    33% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 1;
+    }
 }
+
 /* end: Preloader */
