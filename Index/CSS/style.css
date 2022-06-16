@@ -3,12 +3,17 @@
     src: url(/fontes/Savior1.ttf) format('opentype');
 }
 
+/* Tag html para poder definir tamanho da fonte que será usada no Rem */
+html {
+    font-size: 10px
+}
+
 /* Fundo */
 .body {
     background-color: #FFEEB7;
+    box-sizing: border-box;
     
 }
-
 /* Fim Fundo */
 
 /* End Barra de navegação */
@@ -18,8 +23,8 @@
 
 
 .ilovesthe {
-    width: 400px;
-    transform: translateX(-10px);
+    width: 40rem;
+    
 }
 
 .font-navbar {
@@ -53,37 +58,41 @@
 
 /* main conteudo principal */
 
-.explicacao {
+.explicacao-container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: #e84546;
     width: auto;
     font-family: 'Merriweather', serif;
-
+    align-items: center;
 }
 
-.texto {
-    margin-top: 10rem;
-    margin-left: 3rem;
+.explicacao-texto {
     
+    margin-left: 2%;
+    align-content: center;
+    margin-right: 2% ;
+    max-width: 1000px;
 }
-
+ 
 .explicacao-titulo {
-    padding: 10px;
-    font-size:6rem;
+    
+    font-size:5rem;
     color: #FFEEB7;
 }
 
 .explicacao-paragrafo {
+    margin-top: 20px;
     font-size: 2rem;
     color: #FFEEB7;
     text-align: justify;
+    
 }
 
 
 
 .casal img {
-    width: 40vw;
+    width: 34vw;
     margin: 50px;
 }
 
@@ -133,7 +142,7 @@
 }
 
 .wave-3 {
-    transform: translateY(-2px);
+   
     animation: animateWave-3 20s 0s ease-in-out infinite alternate;
 }
 
@@ -159,52 +168,70 @@
     font-size: 2rem;
 }
 
+.carousel {
+    width: 30vw;
+}
 
 /*End main conteudo principal */
+
+
+.navbar-toggler {
+    width: 5rem;
+    height: 5rem;
+}
 
 /* medias */
 
 @media (max-width: 1600px) {
 
+    html {
+    font-size: 10px
+}
 
     .explicacao-titulo {
         text-align: left;
-        font-size: 5.5rem;
+      
     }
 
-    .explicacao-paragrafo {
-        padding-right: 45px;
-        font-size: 1.6rem;
+       
 
-}
+
 }
 
 @media (max-width: 1300px) {
+
+    html {
+    font-size: 9px
+}
 
     .font-navbar {
     font-size:large;
 
 }
     .ilovesthe {
-        width: 50vw;
+        
     }
 
-    .explicacao {
+    .explicacao-container {
         flex-direction: column;
         justify-content: center;
+        align-items: center;
         text-align: justify;
         text-align: justify;
+        
+    }
+
+    .explicacao-texto {
+        margin-top: 2%;
+        max-width: 1200px;
     }
 
     .explicacao-titulo {
         text-align: left;
-        font-size: 5.5rem;
+        
     }
 
-    .explicacao-paragrafo {
-        padding-right: 45px;
-        font-size: 1.7rem;
-    }
+
 
     .casal {
         display: flex;
@@ -212,7 +239,7 @@
     }
 
     .casal img {
-        width: 60vw;
+        width: 40vw;
     }
 
 }
@@ -220,12 +247,13 @@
 
 @media (max-width: 1000px) {
 
+    html {
+    font-size: 10px
+}
 
-    .ilovesthe {
-        width: 50vw;
-    }
+ 
 
-    .explicacao {
+    .explicacao-container {
         flex-direction: column;
         justify-content: center;
         text-align: justify;
@@ -235,12 +263,7 @@
 
     .explicacao-titulo {
         text-align: left;
-        font-size: 5rem;
-    }
-
-    .explicacao-paragrafo {
-        padding-right: 45px;
-        font-size: 1.3rem;
+        
     }
 
     .casal {
@@ -248,11 +271,73 @@
         justify-content: center;
     }
 
+    .casal {
+        transform: translateY(-20px);
+    }
+
     .casal img {
-        width: 60vw;
+        
+        width: 55vw;
     }
 
 }
+
+@media (max-width: 650px) {
+ html {
+    font-size: 7.5px;
+ }
+
+ .explicacao-texto {
+    margin-top: 5% ;
+ }
+
+
+.casal img {
+    width: 60vw;
+    margin: 5px;
+}
+
+    
+
+}
+
+@media (max-width: 400px) {
+ html {
+    font-size: 7px;
+ }
+
+.ilovesthe {
+    width: 30rem;
+}
+
+ .explicacao-texto {
+    margin-top: 5% ;
+ }
+
+}
+
+.casal img {
+    margin: 0px;
+}
+
+@media (max-width: 400px) {
+ html {
+    font-size: 7.5px;
+ }
+
+
+
+ .explicacao-texto {
+    margin-top: 5% ;
+ }
+
+}
+
+.casal img {
+    margin: 0px;
+}
+
+
 
 
 
