@@ -18,6 +18,10 @@ html {
 /* Fim Fundo */
 
 /* classes generalizadas */
+.font-text-titulo {
+    font-family: 'Merriweather', serif;
+}
+
 .color-beje {
     color: #FFEEB7;
 }
@@ -31,13 +35,13 @@ html {
 }
 
 .titulo-maior {
-    font-size: 10rem;
+    font-size: 9rem;
 }
 
 
 .paragrafo {
     font-size: 2rem;
-
+    font-family: 'Merriweather', serif;
 }
 
 /* classes generalizadas */
@@ -56,7 +60,8 @@ html {
 .font-navbar {
 
     font-size: x-large;
-
+    background: none;
+    border: none;
 }
 
 .text-rosa {
@@ -67,6 +72,7 @@ html {
 
 .rosa {
     color: #E84546;
+    color: #e84546;
 }
 
 .navbar-toggler-icon-rosa {
@@ -181,7 +187,29 @@ html {
     margin-right: 0px;
     padding-right: 0px ;
 }
+.nossa-historia-container p {
+    text-align: justify;
+}
 
+.icone-seta {
+    width: 30px;
+    opacity: 100%;
+
+}
+
+.locais-container {
+    font-family: 'Dancing Script', cursive;
+    margin-right: 0px;
+    padding-right: 0px ;
+}
+
+.locais-container p {
+    text-align: justify;
+}
+.locais-carousel {
+    font-family: 'Merriweather', serif;
+    text-shadow: 3px 3px #545454;
+}
 
 
 
