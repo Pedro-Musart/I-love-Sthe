@@ -12,11 +12,37 @@ html {
 .body {
     background-color: #FFEEB7;
     box-sizing: border-box;
-    
+
 }
+
 /* Fim Fundo */
 
-/* End Barra de navegação */
+/* classes generalizadas */
+.color-beje {
+    color: #FFEEB7;
+}
+
+.color-rosa {
+    color: #E84546;
+}
+
+.titulo {
+    font-size: 5rem;
+}
+
+.titulo-maior {
+    font-size: 10rem;
+}
+
+
+.paragrafo {
+    font-size: 2rem;
+
+}
+
+/* classes generalizadas */
+
+/* Barra de navegação */
 .bg-beje {
     background-color: #FFEEB7;
 }
@@ -24,18 +50,18 @@ html {
 
 .ilovesthe {
     width: 40rem;
-    
+
 }
 
 .font-navbar {
 
-    font-size:x-large;
+    font-size: x-large;
 
 }
 
 .text-rosa {
     font-family: 'Roboto', sans-serif;
-    
+
     color: #E84546 !important;
 }
 
@@ -68,25 +94,16 @@ html {
 }
 
 .explicacao-texto {
-    
+
     margin-left: 2%;
     align-content: center;
-    margin-right: 2% ;
+    margin-right: 2%;
     max-width: 1000px;
-}
- 
-.explicacao-titulo {
-    
-    font-size:5rem;
-    color: #FFEEB7;
 }
 
 .explicacao-paragrafo {
     margin-top: 20px;
-    font-size: 2rem;
-    color: #FFEEB7;
     text-align: justify;
-    
 }
 
 
@@ -97,6 +114,7 @@ html {
 }
 
 /* animação CSS */
+
 
 .wave-container {
     width: 100%;
@@ -142,7 +160,7 @@ html {
 }
 
 .wave-3 {
-   
+
     animation: animateWave-3 20s 0s ease-in-out infinite alternate;
 }
 
@@ -160,40 +178,30 @@ html {
 
 .nossa-historia-container h1 {
     font-family: 'Dancing Script', cursive;
-    font-size: 7vw;
-    color: #E84546;
+    margin-right: 0px;
+    padding-right: 0px ;
 }
 
-.nossa-historia-container p {
-    font-size: 2rem;
-}
 
-.carousel {
-    width: 30vw;
-}
+
 
 /*End main conteudo principal */
 
-
-.navbar-toggler {
-    width: 5rem;
-    height: 5rem;
-}
 
 /* medias */
 
 @media (max-width: 1600px) {
 
     html {
-    font-size: 10px
-}
+        font-size: 10px
+    }
 
     .explicacao-titulo {
         text-align: left;
-      
+
     }
 
-       
+
 
 
 }
@@ -201,15 +209,12 @@ html {
 @media (max-width: 1300px) {
 
     html {
-    font-size: 9px
-}
+        font-size: 9px
+    }
 
     .font-navbar {
-    font-size:large;
+        font-size: large;
 
-}
-    .ilovesthe {
-        
     }
 
     .explicacao-container {
@@ -218,7 +223,7 @@ html {
         align-items: center;
         text-align: justify;
         text-align: justify;
-        
+
     }
 
     .explicacao-texto {
@@ -228,10 +233,8 @@ html {
 
     .explicacao-titulo {
         text-align: left;
-        
+
     }
-
-
 
     .casal {
         display: flex;
@@ -248,22 +251,22 @@ html {
 @media (max-width: 1000px) {
 
     html {
-    font-size: 10px
-}
+        font-size: 10px
+    }
 
- 
+
 
     .explicacao-container {
         flex-direction: column;
         justify-content: center;
         text-align: justify;
-      
+
         text-align: justify;
     }
 
     .explicacao-titulo {
         text-align: left;
-        
+
     }
 
     .casal {
@@ -276,43 +279,43 @@ html {
     }
 
     .casal img {
-        
+
         width: 55vw;
     }
 
 }
 
 @media (max-width: 650px) {
- html {
-    font-size: 7.5px;
- }
+    html {
+        font-size: 7.5px;
+    }
 
- .explicacao-texto {
-    margin-top: 5% ;
- }
+    .explicacao-texto {
+        margin-top: 5%;
+    }
 
 
-.casal img {
-    width: 60vw;
-    margin: 5px;
-}
+    .casal img {
+        width: 60vw;
+        margin: 5px;
+    }
 
-    
+
 
 }
 
 @media (max-width: 400px) {
- html {
-    font-size: 7px;
- }
+    html {
+        font-size: 7px;
+    }
 
-.ilovesthe {
-    width: 30rem;
-}
+    .ilovesthe {
+        width: 30rem;
+    }
 
- .explicacao-texto {
-    margin-top: 5% ;
- }
+    .explicacao-texto {
+        margin-top: 5%;
+    }
 
 }
 
@@ -321,15 +324,15 @@ html {
 }
 
 @media (max-width: 400px) {
- html {
-    font-size: 7.5px;
- }
+    html {
+        font-size: 7.5px;
+    }
 
 
 
- .explicacao-texto {
-    margin-top: 5% ;
- }
+    .explicacao-texto {
+        margin-top: 5%;
+    }
 
 }
 
