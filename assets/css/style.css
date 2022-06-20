@@ -371,7 +371,7 @@ html {
 
  /* ini: Preloader */
 
-/* .coracao-preloader {
+.coracao-preloader {
     width: 5vw;
 }
 
@@ -440,7 +440,7 @@ html {
         transform: scale(1);
         opacity: 1;
     }
-} */
+}
 /* end: Preloader */
 
 
