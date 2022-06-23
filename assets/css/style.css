@@ -8,11 +8,12 @@ html {
     font-size: 12px
 }
 
+
+
 /* Fundo */
 .body {
     background-color: #FFEEB7;
     box-sizing: border-box;
-
 }
 
 /* Fim Fundo */
@@ -44,6 +45,11 @@ html {
     font-family: 'Merriweather', serif;
 }
 
+.paragrafo-footer {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.6rem;
+}
+
 /* classes generalizadas */
 
 /* Barra de navegação */
@@ -58,7 +64,6 @@ html {
 }
 
 .font-navbar {
-
     font-size: x-large;
     background: none;
     border: none;
@@ -169,7 +174,7 @@ html {
 }
 
 .wave-3 {
-    
+
     animation: animateWave-3 20s 0s ease-in-out infinite alternate;
 }
 
@@ -188,8 +193,9 @@ html {
 .nossa-historia-container h1 {
     font-family: 'Dancing Script', cursive;
     margin-right: 0px;
-    padding-right: 0px ;
+    padding-right: 0px;
 }
+
 .nossa-historia-container p {
     text-align: justify;
 }
@@ -203,38 +209,119 @@ html {
 .locais-container {
     font-family: 'Dancing Script', cursive;
     margin-right: 0px;
-    padding-right: 0px ;
+    padding-right: 0px;
 }
 
 .locais-container p {
     text-align: justify;
 }
+
 .locais-carousel {
     font-family: 'Merriweather', serif;
     text-shadow: 3px 3px #545454;
 }
 
-
+.carousel-item img {
+    border-radius: 30px;
+}
 
 /*End main conteudo principal */
 
 
 /* Footer */
 
+footer {
+    transform: translateY(11px);
+}
 
 
 .rodape {
-     display: flex;
-    justify-content: space-evenly;
     background-color: #e84546;
-    width: auto;
-    font-family: 'Merriweather', serif;
-    align-items: center;
     transform: scaleY(1.01);
+   
 }
 
-/* End Footer */
 
+.row {
+    width: 100%;
+    
+}
+
+.rodape p h1 {
+    color: #FFEEB7;
+}
+
+.rodape-block {
+    display: flex;
+    justify-content:space-between;
+    align-content:center;
+}
+
+.rodape-block div {
+    display: flex;
+    align-self: flex-start;
+    margin: 10px;
+}
+
+.rodape-block img {
+    background-color: #FFEEB7;
+    border-radius: 10px;
+    padding: 5px;
+    align-self: flex-start;
+    width: 25rem;
+}
+
+.rodape-block h1 {
+    font-family: 'Roboto', sans-serif;
+    color: #FFEEB7;
+    font-weight: 600;
+}
+
+.rodape-block ul {
+    width: 15rem;
+    padding: 5px;
+    list-style: none;
+    color: #FFEEB7;
+}
+
+.rodape-block li {
+    font-family: 'Roboto', sans-serif;
+    padding: 3px 0px;
+    font-size: 1.5rem;
+}
+
+.rodape-block-2 {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px ;
+    align-items: center;
+
+}
+.redes-sociais{
+    display: flex;
+}
+.redes-sociais p{
+    color: #FFEEB7;
+}
+
+.rodape-block-2 h1{
+    background-color: #FFEEB7;
+    color: #E84546;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.rodape-do-rodape {
+    background-color: #E84546;
+    text-align: center;
+    padding: 0px 20%;
+}
+
+.rodape-do-rodape p {
+    padding: 6px;
+    border-top: solid #FFEEB7 4px;
+    color: #FFEEB7;
+}
 
 
 /* medias */
@@ -269,7 +356,7 @@ html {
     }
 
     .explicacao-container {
-       
+
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -392,7 +479,7 @@ html {
     margin: 0px;
 }
 
- /* ini: Preloader */
+/* ini: Preloader */
 
 .coracao-preloader {
     width: 10rem;
@@ -464,8 +551,5 @@ html {
         opacity: 1;
     }
 }
+
 /* end: Preloader */
-
-
-
-
