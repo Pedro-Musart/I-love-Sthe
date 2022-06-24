@@ -244,7 +244,7 @@ footer {
 
 .row {
     width: 100%;
-    
+
 }
 
 .rodape p h1 {
@@ -253,8 +253,8 @@ footer {
 
 .rodape-block {
     display: flex;
-    justify-content:space-between;
-    align-content:center;
+    justify-content: center;
+    align-content: center;
 }
 
 .rodape-block div {
@@ -293,18 +293,50 @@ footer {
 .rodape-block-2 {
     display: flex;
     flex-direction: column;
-    padding-top: 5px ;
+    padding-top: 5px;
     align-items: center;
+    margin-bottom: 10px;
+}
 
+.rodape-icone {
+    font-size: 4rem;
+    text-decoration: none;
+    padding: 5px;
+    justify-items: space-around;
 }
-.redes-sociais{
+
+.link {
+    color: #FFEEB7;
+    padding: 0px 1px;
+    margin: 5px;
+    border-radius: 6px;
+}
+
+.link:hover {
+    color: #FFEEB7;
+    border-bottom: solid 4px #FFEEB7;
+}
+
+.rodape-icone {
+   display: flex;
+   justify-content: center;
+}
+.rodape-block-2 p {
+     color: #FFEEB7;
+}
+
+.redes-sociais {
     display: flex;
+    justify-content: space-around;
 }
-.redes-sociais p{
+
+
+.redes-sociais p {
     color: #FFEEB7;
 }
 
-.rodape-block-2 h1{
+.rodape-block-2 h1 {
+    font-weight: 600;
     background-color: #FFEEB7;
     color: #E84546;
     padding: 5px;
@@ -319,7 +351,7 @@ footer {
 
 .rodape-do-rodape p {
     padding: 6px;
-    border-top: solid #FFEEB7 4px;
+    border-top: solid #FFEEB7 5px;
     color: #FFEEB7;
 }
 
